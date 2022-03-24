@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #14161C;
+      color: #7a49a5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .container{
+      max-width: 700;
+      position: absolute;
+      top: 35%;
+      left: 37%;
+      
+    }
+    
+    img {
+      size: auto;
+      box-shadow: 0 2px 12px #7a49a56b;
+    }
+    
+    img:hover {
+      
+      box-shadow: 0 2px 24px rgb(57 246 235 / 42%);
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+    
+    .navLink {
+      border-radius: 12px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background: #141414;
+      text-decoration: inherit;
+      font-family: system-ui;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+
+  .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+  .border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.2s;
+      text-shadow: 0 2px 24px #39f6eb6b;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: rgb(57 246 235 / 42%);
+    }
+
+    p {
+      font-weight: 400;
+      
+    }
+
+    footer {
+      background: #141414;
+      color: #7a49a5;
+      position:absolute;
+      bottom:0;
+      width:99%;
+      margin: 6px 0 0 0;
+      text-align: center;
+      border-width: 7px;
+      border-style: solid;
+      border-image:
+        linear-gradient(
+          to bottom, 
+          #7a49a5, 
+          #141414
+        ) 1 50%;
+      border: 6px linear-gradient(
+          to bottom, 
+          #7a49a5, 
+          #141414
+        ) linear;
+    }
+
+  </style>
+  <title>7DaysOfCode</title>
+</head>
+<body>
+  <header class="nav">
+    <button  class="navLink border-gradient border-gradient-purple"><a href="Day1/Day1.html">DAY1</a></button>
+    <button  class="navLink border-gradient border-gradient-purple"><a href="Day2/Day2.html">DAY2</a></button>
+  </header>
+  
+  <div class="container">
+    <img src="https://7daysofcode.io/assets/img/background-7days.1647533642.svg" alt="">
+
+  </div>
+  <footer>
+    <p>footer</p>
+  </footer>
+</body>
+</html>
