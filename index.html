@@ -85,12 +85,13 @@
 
     p {
       font-weight: 400;
+      margin: 0;
       
     }
 
     footer {
       background: #141414;
-      color: #7a49a5;
+      color: #39f6eb6b;
       position:absolute;
       bottom:0;
       width:99%;
@@ -101,7 +102,7 @@
       border-image:
         linear-gradient(
           to bottom, 
-          #7a49a5, 
+          #39f6eb6b, 
           #141414
         ) 1 50%;
       border: 6px linear-gradient(
@@ -111,6 +112,17 @@
         ) linear;
     }
 
+      i {
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 28px;
+    transition: color 0.2s;
+    }
+
+  i:hover {
+    text-shadow: 0 2px 24px #39f6eb6b;
+    }
+
   </style>
   <title>7DaysOfCode</title>
 </head>
@@ -118,6 +130,7 @@
   <header class="nav">
     <button  class="navLink border-gradient border-gradient-purple"><a href="Day1/Day1.html">DAY1</a></button>
     <button  class="navLink border-gradient border-gradient-purple"><a href="Day2/Day2.html">DAY2</a></button>
+    <button  class="navLink border-gradient border-gradient-purple"><a href="Day3/Day3.html">DAY3</a></button>
   </header>
   
   <div class="container">
@@ -125,7 +138,22 @@
 
   </div>
   <footer>
-    <p>footer</p>
+    <div class="info">
+      <p class="title">Luiz Gustavo Nunes</p>
+      <p class="subtitle">Desenvolvedor Jr</p>
+      <a title="Codepen" class="icon" target="_blank" href="https://codepen.io/luiz1gustavo2">
+        <i class="fab fa-codepen"></i>
+      </a>
+
+      <a title="GitHub" class="icon" target="_blank" href="https://github.com/luiz1gustavo2">
+        <i class="fab fa-github-square"></i>
+      </a>
+
+      <a title="Linkedin" class="icon" target="_blank" href="https://www.linkedin.com/in/luiz1gustavo2/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
   </footer>
+  <script src="https://kit.fontawesome.com/d37c5443c6.js" crossorigin="anonymous"></script>
 </body>
 </html>
