@@ -44,22 +44,42 @@ if(carreira == 1) {
   alert("Resposta inválida");
 }
 
-document.writeln(`Linguagens que ${nome} também deseja estudar:`);
+document.writeln(`<ul>Linguagens que ${nome} também deseja estudar:</ul>`);
 
 do {
   resposta = prompt(`Você possui alguma outra linguagem que pretende estudar? Responda com Sim ou Não.`);
   if (resposta == "Sim") {
     let linguagens = prompt(`Então qual outra linguagem você gostaria de aprender?`);
     if (linguagens == "Ruby") {
-      document.writeln(`<i class="fab fa-ruby"></i>`);
+      document.writeln(`<li>Ruby</li>`);
     } else if (linguagens == "PHP") {
-      document.writeln(`<i class="fab fa-php"></i>`);
+      document.writeln(`<li><i class="fab fa-php"></i></li>`);
+    } else if (linguagens == "Angular"){
+      document.writeln(`<li>Angular</i></li>`);
+    } else if (linguagens == "React"){
+      document.writeln(`<li><i class="fab fa-react"></i></i></li>`);
+    } else if (linguagens == "Vue"){
+      document.writeln(`<li>Vue</i></li>`);
+    } else if (linguagens == "C#"){
+      document.writeln(`<li>C#</i></li>`);
+    } else if (linguagens == "C"){
+      document.writeln(`<li>C</i></li>`);
+    } else if (linguagens == "C++"){
+      document.writeln(`<li>C++</i></li>`);
+    } else if (linguagens == "Java"){
+      document.writeln(`<li>Java</i></li>`);
+    } else if (linguagens == "Cobol"){
+      document.writeln(`<li>Cobol</i></li>`);
+    } else if (linguagens == "Elixir"){
+      document.writeln(`<li>Elixir</i></li>`);
+    } else if (linguagens == "Node"){
+      document.writeln(`<li>Node</i></li>`);
+    } else if (linguagens == "Python") {
+      document.writeln(`<li>Python</i></li>`);
     } else {
       break;
     }
-    console.log(linguagens);
-  } else {
-    document.writeln(`No momento nenhuma.`);
+    } else {
     break;
   }
 }
