@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>7DaysOfCode</title>
+  <style>
+    body {
+      background-color: #14161C;
+      color: white;
+      margin: 40px 100px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .container{
+      position: absolute;
+      max-width: 700;
+      top: 35%;
+      left: 35%;
+    }
+
+    .border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    }
+    .border-gradient-purple {
+      border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+    }
+
+      button {
+      background: #141414;
+      text-decoration: inherit;
+      font-family: system-ui;
+      font-size: 1rem;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin-top: 4px;
+      color: white;
+    }
+
+    #lista {
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      background: #ecf4ff;
+      box-shadow: 2px 2px 4px rgba(14, 16, 10, 0.42);
+      border-radius: 20px;
+      color: #14161C;
+      opacity: 0.7;
+      padding: 8px;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+    
+    img {
+      box-shadow: 0 2px 24px rgb(57 246 235 / 42%);
+      size: auto;
+      opacity: 10%;
+    }
+
+    a:hover {
+      color: rgb(57 246 235 / 42%);
+    }
+
+    p {
+      font-weight: 400;
+      animation: appear ease-in 1.5s;
+      margin: 0;
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <p>Deseja remover algum alimento?</p>
+  <p>Se sim, escreva o nome do alimento.</p>
+  <input type="text" id="removedor" />
+  <button onclick="remover()" class="border-gradient border-gradient-purple">Remover</button>
+  <div id="lista">
+    <h1>Lista de Compras</h1>
+  </div>
+  <div class="container">
+    <img src="https://7daysofcode.io/assets/img/background-7days.1647533642.svg" alt="">
+  </div>
+</body>
+<script type="text/javascript" src="Day5.js"></script>
+</html>
